@@ -2,13 +2,21 @@
 
 class Program1
 {
+  /// <summary>
+  /// Mainメソッド
+  /// </summary>
+  /// <param name="args"></param>
     static void Main(string[] args)
     {
         const int startNumber = 1;
         const int endNumber = 100;
         showPrimeNumber(startNumber,endNumber);
     }
-
+    /// <summary>
+    /// 素数表示メソッド
+    /// </summary>
+    /// <param name="startNumber"></param>
+    /// <param name="endNumber"></param>
 private static void showPrimeNumber(int startNumber, int endNumber)
 {
     //1～100までループさせる
@@ -16,14 +24,16 @@ private static void showPrimeNumber(int startNumber, int endNumber)
     {
         if (IsPrime(number))
         {
-
             Console.WriteLine(number);
         }
     }
 }
 
-    /*素数判別メソッド　
-     * 戻り値に素数が入る*/
+    /// <summary>
+    /// 素数判定メソッド
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns>素数</returns>
     private static bool IsPrime(int number)
     {
         if (number <= 1) return false;  // 1以下は素数じゃない
@@ -39,5 +49,4 @@ private static void showPrimeNumber(int startNumber, int endNumber)
         }
         return true;
     }
-
 }
