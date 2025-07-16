@@ -9,7 +9,7 @@ class Program1
         showPrimeNumber(startNumber,endNumber);
     }
 
-static void showPrimeNumber(int startNumber, int endNumber)
+private static void showPrimeNumber(int startNumber, int endNumber)
 {
     //1～100までループさせる
     for (int number = startNumber; number <= endNumber; number++)
@@ -24,7 +24,7 @@ static void showPrimeNumber(int startNumber, int endNumber)
 
     /*素数判別メソッド　
      * 戻り値に素数が入る*/
-    static bool IsPrime(int number)
+    private static bool IsPrime(int number)
 {//もしnumberが1だったらfalseを返す
     if (number == 1)
     {
