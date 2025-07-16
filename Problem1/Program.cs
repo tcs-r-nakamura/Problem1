@@ -5,8 +5,7 @@ class Program1
   /// <summary>
   /// Mainメソッド
   /// </summary>
-  /// <param name="args"></param>
-    static void Main(string[] args)
+    static void Main()
     {
         const int startNumber = 1;
         const int endNumber = 100;
@@ -15,8 +14,8 @@ class Program1
     /// <summary>
     /// 素数表示メソッド
     /// </summary>
-    /// <param name="startNumber"></param>
-    /// <param name="endNumber"></param>
+    /// <param name="startNumber">開始番号</param>
+    /// <param name="endNumber">終了番号</param>
 private static void showPrimeNumber(int startNumber, int endNumber)
 {
     //1～100までループさせる
@@ -32,7 +31,7 @@ private static void showPrimeNumber(int startNumber, int endNumber)
     /// <summary>
     /// 素数判定メソッド
     /// </summary>
-    /// <param name="number"></param>
+    /// <param name="number">１～１００の数字</param>
     /// <returns>素数</returns>
     private static bool IsPrime(int number)
     {
