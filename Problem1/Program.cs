@@ -24,11 +24,11 @@ private static void showPrimeNumber(int startNumber, int endNumber)
 
     /*素数判別メソッド　
      * 戻り値に素数が入る*/
-    static bool IsPrime(int number)
+    private static bool IsPrime(int number)
     {
         if (number <= 1) return false;  // 1以下は素数じゃない
-        if (number % 2 == 0) return false; // 2以外の偶数は素数じゃない
         if (number == 2) return true;   // 2は素数
+        if (number % 2 == 0) return false; // 2以外の偶数は素数じゃない
 
         for (int i = 3; i * i <= number; i += 2) // 奇数だけチェック
         {
