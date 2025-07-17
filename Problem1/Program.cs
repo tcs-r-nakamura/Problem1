@@ -27,7 +27,7 @@ private static void showPrimeNumber(int startNumber, int endNumber)
         }
     }
 }
-
+    
     /// <summary>
     /// 素数判定メソッド
     /// </summary>
